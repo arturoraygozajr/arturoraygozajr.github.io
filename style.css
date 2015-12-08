@@ -1,7 +1,16 @@
 body {
-	background-color: red
+    background-color: black;
+    color: white;
 }
+
 .print {
-    font-size: 40px;
+    font-size: 50px;
     /*color: purple;*/
+}
+
+#makedark {
+    font-size: 30px;
+}
+#makelight {
+    font-size: 30px;
 }
