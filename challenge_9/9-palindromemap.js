@@ -1,14 +1,21 @@
-var add = function(Content1, Content2){
-    var result = (Content1+Content2);
-    return result;
+//var add = function(Content1, Content2){
+//    var result = (Content1+Content2);
+//    return result;
+//};
+//
+//console.log(add(13,16));
+//
+//var subtract = function(Content1, Content2){
+//    var result = (Content1 - Content2);
+//    return result;
+//};
+//
+//
+//console.log(subtract(213,134));
+function reverse(s) {
+    return s.split('').reverse().join('');
+}
+
+var palindromemapSingle = function(){
+
 };
-
-console.log(add(13,16));
-
-var subtract = function(Content1, Content2){
-    var result = (Content1 - Content2);
-    return result;
-};
-
-
-console.log(subtract(213,134));
