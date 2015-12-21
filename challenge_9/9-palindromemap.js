@@ -16,7 +16,7 @@ function reverse(s) {
     return s.split('').reverse().join('');
 }
 
-var palindromeSingle = function(word){
+var palindromeSingle = function(word, index, arr){
     var rev = reverse(word);
     if (rev == word){
         return true;
@@ -29,6 +29,7 @@ var palindromeSingle = function(word){
 
 var palindromicMap = function(words){
     var splitt = words.split(" ");
-    return splitt;
+    var result = splitt.map(palindromeSingle)
+    return result;
 
 };
