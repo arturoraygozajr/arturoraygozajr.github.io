@@ -16,6 +16,13 @@ function reverse(s) {
     return s.split('').reverse().join('');
 }
 
-var palindromemapSingle = function(){
-
+var palindromemapSingle = function(word){
+    var rev = reverse(word);
+    if (rev == word){
+        return true;
+    }
+    else {
+        return false;
+    }
+    return rev;
 };
