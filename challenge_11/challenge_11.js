@@ -1,5 +1,7 @@
-var elementLoop = function(numbers){
-    for (i = 0; i < numbers.length; i++);{
-        console.log(numbers[i]);
-    }
+var elementLoop = function(arr){
+    for (var i = 0; i < arr.length; i++){
+        console.log(arr[i]);
+    };
 };
+
+elementLoop(["wassup", "jammy", "whaa"])
