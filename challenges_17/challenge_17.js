@@ -7,10 +7,16 @@ $( document ).ready(function() {
 
     console.log(words[wordIndex]);
 
-    for (i = 0; i < 26; i++) {
-        var letter = String.fromCharCode(i + 65);
-        $("#buttons").append( "<button type='button' id='"+letter+"'> " + letter +  "</button>");
-    }
+    var misses = 10;
+    $('#misses').html(misses);
+
+    $("body").keypress(function(event) {
+        var letter = String.fromCharCode(event.which);
+        console.log( event.which + " which was " + letter );
+
+        misses--;
+        $('#misses').html(misses);
+    });
 });
 
 
