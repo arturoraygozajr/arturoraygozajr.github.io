@@ -1,6 +1,8 @@
 body {
 	font-family: "Helvetica", "Arial", sans-serif;
-	background: rgb(61,61,61);
+	background: red;
+    font-size: 34px;
+    color: blue;
 }
 
 #navbar .nav > li > a,
@@ -46,7 +48,7 @@ body {
 }
 
 .jumbotron {
-	background-color: rgb(243,243,243);
+	background-color: red;
 	padding-bottom: 400px;
 }
 

@@ -6,6 +6,11 @@ $( document ).ready(function() {
     console.log(wordIndex);
 
     console.log(words[wordIndex]);
+
+    for (i = 0; i < 26; i++) {
+        var letter = String.fromCharCode(i + 65);
+        $("#buttons").append( "<button type='button' id='"+letter+"'> " + letter +  "</button>");
+    }
 });
 
 
