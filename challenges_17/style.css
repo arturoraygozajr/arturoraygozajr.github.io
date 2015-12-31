@@ -1,0 +1,56 @@
+body {
+	font-family: "Helvetica", "Arial", sans-serif;
+	background: rgb(61,61,61);
+}
+
+#navbar .nav > li > a,
+.navbar-brand {
+	color: #ffffff;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    text-shadow: 0 -1px rgba(0,0,0,0.5);
+    background-image: linear-gradient(rgb(127,207,221),rgb(140,182,204));
+	margin-right: 2px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#navbar .nav > li > a:focus, 
+#navbar .nav > li > a:hover,
+.navbar-brand:focus,
+.navbar-brand:hover {
+	color: black;
+	background-color: #ffffff;
+	text-shadow: none;
+	background-image:none;
+}
+
+#navbar .dropdown-menu {
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#navbar .dropdown-menu li {
+	margin: 0 15px;
+}
+
+#navbar .dropdown-menu li:not(:last-child) {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#navbar .dropdown-menu li a {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.jumbotron {
+	background-color: rgb(243,243,243);
+	padding-bottom: 400px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	min-height: 0;
+}
