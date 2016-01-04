@@ -7,13 +7,16 @@ $( document ).ready(function() {
 
     console.log(words[wordIndex]);
     var word = words[wordIndex];
-
-
+    var underscore = "";
+    for(i = 0; i < word.length; i++) {
+        underscore = underscore + "_ "
+    }
+    $('#underscore').html(underscore);
     var misses = 10;
     $('#misses').html(misses);
     var currentLetter = 0;
 
-
+    $("body").css("text-align", "center");
     $("body").keypress(function(event) {
         var letter = String.fromCharCode(event.which);
         console.log( event.which + " which was " + letter );
@@ -33,7 +36,7 @@ $( document ).ready(function() {
         }
 
         if (misses == 0) {
-            console.log("You suck!");
+            console.log("You lose!");
         }
 
 
