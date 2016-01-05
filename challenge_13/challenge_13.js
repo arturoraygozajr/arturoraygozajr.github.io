@@ -1,4 +1,5 @@
 
+//this function step by step inverts a hex color.
 function invertColor(hexTripletColor) {
     var color = hexTripletColor;
     color = color.substring(1);           // remove #
@@ -12,7 +13,9 @@ function invertColor(hexTripletColor) {
 
 
 function rgbToHex(srgb) {
+    //exec() method tests for a match in a string.
     var rgbvals = /rgba?\((.+),(.+),(.+)\)/i.exec(srgb);
+    //parseInt method takes a string and returns an integer.
     var rval = parseInt(rgbvals[1]);
     var gval = parseInt(rgbvals[2]);
     var bval = parseInt(rgbvals[3]);
@@ -22,7 +25,6 @@ function rgbToHex(srgb) {
             bval.toString(16)
         ).toUpperCase();
 }
-
 
 function loop_div()
 {
@@ -38,7 +40,8 @@ function loop_div()
         var x = $(this).css('background-color');
         console.log("x "+ x);
         hexcolor = rgbToHex(x);
-       $( this).css('background-color',invertColor(hexcolor));
+      //setting the inverted color the font color here
+       $( this).css('color',invertColor(hexcolor));
     });
 
 
@@ -46,6 +49,3 @@ function loop_div()
 
 }
 
-
-
-loop_div();
