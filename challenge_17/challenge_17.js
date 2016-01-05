@@ -22,6 +22,8 @@ $( document ).ready(function() {
         console.log( event.which + " which was " + letter );
 
 
+//        insted of current letter create divs for each underscore and use them to replace with
+//        actual letter, so that user can choose letter that are not in a particular order.
 
         if ( letter == word[currentLetter]) {
             console.log("Horraaayyy");
